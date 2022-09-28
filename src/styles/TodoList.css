@@ -1,0 +1,63 @@
+.TodoList{
+  margin:0 30%;
+}
+
+.Todo{
+  border:2px solid black;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  margin: .5rem 0 ;
+  font-weight: 500;
+  box-shadow: 0 10px 10px -5px;
+  font-size: 1.5rem;
+}
+.Todobox{
+  margin: 1rem;
+}
+.TodoEdit{
+  margin-left: auto;
+  transition: .5s;
+}
+.TodoTrash:hover {
+  transform: scale(1.3);
+  color:red;
+  cursor: pointer;
+}
+.TodoEdit:hover{
+  transform: scale(1.3);
+  color:green;
+  cursor: pointer;
+}
+.TodoTrash{
+  transition: .5s;
+  margin: 1rem
+}
+
+
+.TodoForm{
+  margin: 1rem 30%;
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  box-shadow: 0 10px 10px -5px;
+}
+
+.FormInput{
+  height: 3.5vh;
+  margin: 1rem;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  border-bottom: 5px solid black;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+.FormInput:focus{
+  border-color: green;
+}
+
+
+
+
