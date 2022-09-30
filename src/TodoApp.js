@@ -29,6 +29,19 @@ function TodoApp() {
     })
     setTodos(updatedTodos)
   }
+  const toggleAllDone = () => {
+    const updatedTodos = todos.map(todo =>{
+      return {...todo, done: true}
+    })
+    setTodos(updatedTodos)
+  }
+  const toggleAllUndone = () => {
+    const updatedTodos = todos.map(todo =>{
+      return {...todo, done: false}
+    })
+    setTodos(updatedTodos)
+  }
+
   const editTodo = (todoId, newTask) => {
     const updatedTodos = todos.map(todo =>
       todo.id === todoId ? {...todo, task: newTask} : todo
@@ -36,10 +49,20 @@ function TodoApp() {
     setTodos(updatedTodos)
   }
 
+  const deleteAll = () => {
+    const updatedTodos = todos.filter(todo=> todo.done === false)
+    setTodos(updatedTodos) 
+  }
+
   return (
     <div className='TodoApp'>
       <Navbar  />
-      <TodoForm addTodo={addTodo} />
+      <TodoForm 
+        addTodo={addTodo} 
+        toggleAllDone={toggleAllDone}
+        toggleAllUndone={toggleAllUndone}
+        deleteAll={deleteAll}
+      />
       <TodoList 
        todos={todos} 
        removeTodo={removeTodo} 
