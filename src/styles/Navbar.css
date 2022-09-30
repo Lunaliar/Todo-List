@@ -1,11 +1,11 @@
 .Navbar{
   display: flex;
-  background-color: #1d3557;
-  color:white;
+  background-color: #10417b;
+  color:#d3d3d3;
   align-items: center;
   height: 6vh
 }
 .Title{
-  margin: 0 1rem;
+  margin: 0 2rem;
   font-size: 1.5rem;
 }

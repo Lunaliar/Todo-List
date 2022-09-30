@@ -9,8 +9,12 @@
   align-items: center;
   margin: .5rem 0 ;
   font-weight: 500;
-  box-shadow: 0 10px 10px -5px;
+  box-shadow: 0 10px 10px -5px black;
   font-size: 1.5rem;
+  background: linear-gradient(90deg, rgba(191,87,133,1) 0%, rgba(16,65,123,1) 100%);
+  color:white;
+  border-radius: .2rem;
+
 }
 .Todobox{
   margin: 1rem;
@@ -40,7 +44,10 @@
   display: flex;
   justify-content: center;
   border: 2px solid black;
-  box-shadow: 0 10px 10px -5px;
+  box-shadow: 0 10px 10px -5px black;
+  background: linear-gradient(90deg, rgba(191,87,133,1) 0%, rgba(16,65,123,1) 100%);
+  color:white;
+  border-radius: .2rem;
 }
 
 .FormInput{
@@ -49,15 +56,21 @@
   outline: 0;
   border: 0;
   background: transparent;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid #bababa;
   font-size: 1.5rem;
   font-weight: 500;
   text-align: center;
+  color:white;
 }
 .FormInput:focus{
-  border-color: green;
+  border-color: white;
 }
-
-
+::placeholder{
+  color: #bababa;
+}
+.complete{
+  text-decoration: line-through;
+  color: gray;
+}
 
 

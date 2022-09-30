@@ -3,6 +3,8 @@ import Navbar from './Navbar'
 import TodoForm from './TodoForm'
 import TodoList from './TodoList'
 import { v4 as uuidv4 } from 'uuid';
+import './styles/TodoApp.css'
+
 
 function TodoApp() {
   const initialTodos= [
@@ -27,6 +29,12 @@ function TodoApp() {
     })
     setTodos(updatedTodos)
   }
+  const editTodo = (todoId, newTask) => {
+    const updatedTodos = todos.map(todo =>
+      todo.id === todoId ? {...todo, task: newTask} : todo
+    )
+    setTodos(updatedTodos)
+  }
 
   return (
     <div className='TodoApp'>
@@ -36,6 +44,7 @@ function TodoApp() {
        todos={todos} 
        removeTodo={removeTodo} 
        toggleTodo={toggleTodo}
+       editTodo={editTodo}
       />
     </div>
   )

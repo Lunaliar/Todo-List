@@ -2,7 +2,7 @@ import React from 'react';
 import './styles/TodoList.css'
 import Todo from './Todo';
 
-function TodoList({todos, removeTodo, toggleTodo}) {
+function TodoList({todos, removeTodo, toggleTodo, editTodo}) {
   return (
     <div className='TodoList'>
         {todos.map(todo=>{
@@ -13,6 +13,7 @@ function TodoList({todos, removeTodo, toggleTodo}) {
            done={todo.done}
            removeTodo={removeTodo}
            toggleTodo={toggleTodo}
+           editTodo={editTodo}
             />
         })}
     </div>
