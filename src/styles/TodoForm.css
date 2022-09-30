@@ -16,14 +16,19 @@
 }
 .SelectAll{
   font-size: 1.3rem;
+  transition: all .3s ease-in-out;
 }
 .TrashAll{
   font-size: 1.3rem;
+  transition: all .3s ease-in-out;
 }
-.SelectAll:hover,.TrashAll:hover{
+.SelectAll:hover{
   transform: scale(1.3);
   color:aqua;
-  transition: .5s;
+}
+.TrashAll:hover{
+  transform: scale(1.3);
+  color: #fa2a84;
 }
 
 .FormInput{

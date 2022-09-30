@@ -10,20 +10,22 @@ function TodoForm({addTodo, toggleAllDone, toggleAllUndone, deleteAll}) {
     addTodo(value)
     reset()
   }
-  const clickAllDone = () => {
+  const allDone = () => {
     toggleAllDone()
     setAll(!allSelect)
   }
-  const clickAllUndone = () => {
+  const allUndone = () => {
     toggleAllUndone()
     setAll(!allSelect)
   }
 
   return (
     <div  className='TodoForm'>
-    <i title='Select all' onClick={allSelect ? clickAllDone : clickAllUndone} className="SelectAll fa-solid fa-list-check" />
+    <i title='Select all' onClick={allSelect ? allDone : allUndone}
+     className="SelectAll fa-solid fa-list-check" />
     <form onSubmit={handleSubmit}>
       <input
+      maxLength={30}
       placeholder='Add New Todo'
       type="text"
       value={value} 
@@ -31,7 +33,8 @@ function TodoForm({addTodo, toggleAllDone, toggleAllUndone, deleteAll}) {
       className="FormInput"
       />
     </form>
-    <i title='Delete Selected' onClick={deleteAll} className="TrashAll fa-solid fa-trash" />
+    <i title='Delete Selected' onClick={deleteAll}
+     className="TrashAll fa-solid fa-trash" />
     </div>
   )
 }
