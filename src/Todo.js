@@ -9,7 +9,7 @@ function Todo({ id, task, done,  removeTodo, toggleTodo, editTodo }) {
 
   return (
     <div className='Todo'>
-      <i onClick={()=> toggleTodo(id)} className={`Todobox fa-regular fa-square${done ? '-check': ''}`}/>
+      <i onClick={()=> toggleTodo(id)} className={`Todobox fa-regular fa-square${done ? '-check checked': ''}`}/>
       <div className={`${done ? 'complete' : ''}`}>
         {isEditing ? <EditForm task={task} editTodo={editTodo} editToggle={editToggle} id={id} /> : task}
       </div>
