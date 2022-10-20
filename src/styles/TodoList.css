@@ -1,5 +1,11 @@
 .TodoList {
 	width: 70%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding: 1rem;
+}
+.TodoList::-webkit-scrollbar {
+	display: none;
 }
 .Todo {
 	border: 2px solid black;
