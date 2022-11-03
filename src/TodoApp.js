@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 import TodoForm from "./TodoForm";
 import TodoList from "./TodoList";
-import { v4 as uuidv4 } from "uuid";
+import {v4 as uuidv4} from "uuid";
 import useLocalStorageState from "./hooks/useLocalStorageState";
 import useTodoState from "./hooks/useTodoState";
 import "./styles/TodoApp.css";
 
 function TodoApp() {
-	const initialTodos = [];
+	const initialTodos = [{task: "Hi Im a Todo!", done: false, id: 1}];
 	const {
 		todos,
 		addTodo,
@@ -18,7 +18,7 @@ function TodoApp() {
 		editTodo,
 		deleteAll,
 	} = useTodoState(initialTodos);
-	useLocalStorageState(todos, initialTodos);
+	// useLocalStorageState(todos, initialTodos);
 
 	return (
 		<div className="TodoApp">
