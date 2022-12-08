@@ -1,3 +1,7 @@
+# Todo List
+
+This is my first todo list! I approached this as an exercise to focus on getting the fundamentals working perfectly and not to spiral into adding bunches of shiny new bells and whistles. I really enjoyed making this project and getting to kinda go wild with my styling was a true delight.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
