@@ -18,3 +18,9 @@
 		font-size: 10px;
 	}
 }
+.credit {
+	margin-top: auto;
+}
+.credit a {
+	color: blue;
+}

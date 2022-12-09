@@ -1,10 +1,8 @@
-import React, {useEffect, useState} from "react";
-import TodoForm from "./TodoForm";
-import TodoList from "./TodoList";
-import {v4 as uuidv4} from "uuid";
-import useLocalStorageState from "./hooks/useLocalStorageState";
+import React from "react";
 import useTodoState from "./hooks/useTodoState";
 import "./styles/TodoApp.css";
+import TodoForm from "./TodoForm";
+import TodoList from "./TodoList";
 
 function TodoApp() {
 	const initialTodos = [{task: "Hi Im a Todo!", done: false, id: 1}];
@@ -34,7 +32,7 @@ function TodoApp() {
 				toggleTodo={toggleTodo}
 				editTodo={editTodo}
 			/>
-			<p>
+			<p className="credit">
 				<a href="https://savcodes.dev">Sav Costabile</a> © 2022
 			</p>
 		</div>
