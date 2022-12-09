@@ -34,6 +34,9 @@ function TodoApp() {
 				toggleTodo={toggleTodo}
 				editTodo={editTodo}
 			/>
+			<p>
+				<a href="https://savcodes.dev">Sav Costabile</a> © 2022
+			</p>
 		</div>
 	);
 }
