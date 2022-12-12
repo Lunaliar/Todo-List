@@ -1,6 +1,5 @@
 .TodoApp {
 	height: 100vh;
-	overflow: hidden;
 	width: 100vw;
 	margin: 0;
 	display: flex;
@@ -13,13 +12,19 @@
 		rgba(97, 152, 211, 1) 100%
 	);
 }
+
 @media screen and (max-width: 43rem) {
 	html {
 		font-size: 10px;
 	}
 }
+.buffer {
+	height: 2rem;
+}
 .credit {
 	margin-top: auto;
+	margin-bottom: 0.5rem;
+	color: white;
 }
 .credit a {
 	color: blue;

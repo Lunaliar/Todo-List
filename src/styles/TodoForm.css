@@ -1,5 +1,6 @@
 .TodoForm {
-	margin: 2rem 0 0.5rem 0;
+	margin-bottom: 0.5rem;
+	margin-top: auto;
 	display: flex;
 	width: 65%;
 	justify-content: space-between;

@@ -20,6 +20,7 @@ function TodoApp() {
 
 	return (
 		<div className="TodoApp">
+			<div className="buffer"></div>
 			<TodoForm
 				addTodo={addTodo}
 				toggleAllDone={toggleAllDone}
