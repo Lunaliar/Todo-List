@@ -1,6 +1,7 @@
 # Todo List
 
-This is my first todo list! I approached this as an exercise to focus on getting the fundamentals working perfectly and not to spiral into adding bunches of shiny new bells and whistles. I really enjoyed making this project and getting to kinda go wild with my styling was a true delight.
+Everyone has to make at least one of these, and I wanted to give it some fun flair while not making it too complicated. I often find myself on the hunt for a new to-do app every month, and I don't like all the extra bells and whistles I find. So my goal for this project was to make the basics function perfectly and only go crazy with the styling this time.
+
 
 # Getting Started with Create React App
 
