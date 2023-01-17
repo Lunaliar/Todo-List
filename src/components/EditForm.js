@@ -1,6 +1,6 @@
 import React from "react"
-import useInputState from "./hooks/useInputState"
-import "./styles/TodoApp.css"
+import useInputState from "../hooks/useInputState"
+import "../styles/TodoApp.css"
 
 function EditForm({ id, task, editToggle, editTodo }) {
   const [value, handleChange] = useInputState(task)

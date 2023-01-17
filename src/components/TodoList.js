@@ -1,5 +1,5 @@
 import React from "react"
-import "./styles/TodoApp.css"
+import "../styles/TodoApp.css"
 import Todo from "./Todo"
 
 function TodoList({ todos, removeTodo, toggleTodo, editTodo }) {

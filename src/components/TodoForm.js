@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import useInputState from "./hooks/useInputState"
-import "./styles/TodoApp.css"
+import useInputState from "../hooks/useInputState"
+import "../styles/TodoApp.css"
 
 function TodoForm({ addTodo, toggleAllDone, toggleAllUndone, deleteAll }) {
   const [value, handleChange, reset] = useInputState("")

@@ -1,7 +1,7 @@
 import React from "react"
 import EditForm from "./EditForm"
-import useToggle from "./hooks/useToggle"
-import "./styles/TodoApp.css"
+import useToggle from "../hooks/useToggle"
+import "../styles/TodoApp.css"
 import { MdCheckBox, MdCheckBoxOutlineBlank } from "react-icons/md"
 import { FaEdit, FaTrashAlt } from "react-icons/fa"
 
