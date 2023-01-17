@@ -7,7 +7,7 @@ import TodoList from "./TodoList"
 function TodoApp() {
   const initialTodos = [
     {
-      task: "Hey we've been trying to reach you about your car's extended warranty!",
+      task: "We've been trying to reach you about your car's extended warranty!",
       done: false,
       id: 1,
     },

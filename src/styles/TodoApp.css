@@ -38,24 +38,7 @@
     font-size: 3rem;
   }
 }
-/* @media screen and (min-width: 29em) {
-  .App {
-    max-width: 20vw;
-  }
-  .keyboard {
-    width: 55vw;
-  }
-}
-@media screen and (min-width: 60em) {
-  .App {
-    font-size: 0.7em;
-  }
-}
-@media screen and (min-width: 114em) {
-  .App {
-    font-size: 1.7em;
-  }
-} */
+
 .buffer {
   height: 2em;
 }
@@ -80,6 +63,7 @@
   border: 2px solid black;
   min-height: 7vh;
   display: flex;
+  justify-content: center;
   align-items: center;
   margin: 0.5em 0;
   max-width: 100%;
@@ -94,6 +78,7 @@
   color: white;
   border-radius: 0.2em;
 }
+
 .Todobox {
   margin: 1em;
   transition: 0.3s ease-in-out;
@@ -123,7 +108,6 @@
 .checked {
   color: aqua;
 }
-
 .complete {
   text-decoration: line-through;
   color: gray;
@@ -172,18 +156,21 @@
 }
 .FormInput {
   height: 3.5vh;
-  width: 100%;
   margin: 1em 0;
+  min-width: 100%;
   outline: 0;
   border: 0;
   background: transparent;
   padding-bottom: 5px;
   border-bottom: 2.5px solid #bababa;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 500;
   text-align: center;
   color: white;
   align-self: center;
+}
+.incomplete {
+  width: 90%;
 }
 .FormInput:focus {
   border-color: white;

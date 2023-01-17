@@ -19,7 +19,6 @@ function EditForm({ id, task, editToggle, editTodo }) {
         className="FormInput"
         style={{ textAlign: "left" }}
       />
-      {/*   <i type="submit" className="fa-solid fa-check-double" /> */}
     </form>
   )
 }

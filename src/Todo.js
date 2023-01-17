@@ -2,19 +2,26 @@ import React from "react"
 import EditForm from "./EditForm"
 import useToggle from "./hooks/useToggle"
 import "./styles/TodoApp.css"
+import { MdCheckBox, MdCheckBoxOutlineBlank } from "react-icons/md"
+import { FaEdit, FaTrashAlt } from "react-icons/fa"
 
 function Todo({ id, task, done, removeTodo, toggleTodo, editTodo }) {
   const [isEditing, editToggle] = useToggle(false)
 
   return (
     <div className="Todo">
-      <i
-        onClick={() => toggleTodo(id)}
-        className={`Todobox fa-regular fa-square${
-          done ? "-check checked" : ""
-        }`}
-      />
-      <div className={`${done ? "complete" : ""}`}>
+      {done ? (
+        <MdCheckBox
+          className="Todobox checked"
+          onClick={() => toggleTodo(id)}
+        />
+      ) : (
+        <MdCheckBoxOutlineBlank
+          className="Todobox"
+          onClick={() => toggleTodo(id)}
+        />
+      )}
+      <div className={`${done ? "complete" : "incomplete"}`}>
         {isEditing ? (
           <EditForm
             task={task}
@@ -26,14 +33,8 @@ function Todo({ id, task, done, removeTodo, toggleTodo, editTodo }) {
           task
         )}
       </div>
-      <i
-        onClick={editToggle}
-        className=" TodoEdit fa-regular fa-pen-to-square"
-      />
-      <i
-        onClick={() => removeTodo(id)}
-        className="TodoTrash fa-regular fa-trash-can"
-      />
+      <FaEdit onClick={editToggle} className=" TodoEdit" />
+      <FaTrashAlt onClick={() => removeTodo(id)} className="TodoTrash" />
     </div>
   )
 }

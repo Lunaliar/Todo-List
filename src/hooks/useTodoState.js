@@ -3,7 +3,7 @@ import { useState } from "react"
 import useLocalStorageState from "./useLocalStorageState"
 
 export default initialTodos => {
-  // const [todos, setTodos] = useLocalStorageState(initialTodos);
+  //const [todos, setTodos] = useLocalStorageState(initialTodos)
   const [todos, setTodos] = useState(initialTodos)
   return {
     todos,
